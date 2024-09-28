@@ -1,0 +1,943 @@
+{
+	"info": {
+		"_postman_id": "a1178fa4-59c1-48e7-88c1-e0aa65c644dd",
+		"name": "GatewayManager.API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26023579"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Gateway",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Gateway/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Gateway/6",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Gateway",
+												"6"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer <token>",
+														"description": "Added as a part of security scheme: bearer"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Gateway/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Gateway",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Gateway/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Gateway/5",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Gateway",
+												"5"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer <token>",
+														"description": "Added as a part of security scheme: bearer"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Gateway/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Gateway",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetPage",
+							"item": [
+								{
+									"name": "/api/Gateway/GetPage",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Gateway/GetPage?FilterBySerialNumber=<string>&FilterByName=<string>&FilterByIPv4Address=<string>&PageNumber=<integer>&PageSize=<integer>&SortBy=<string>&OrderBy=<string>&Skip=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Gateway",
+												"GetPage"
+											],
+											"query": [
+												{
+													"key": "FilterBySerialNumber",
+													"value": "<string>"
+												},
+												{
+													"key": "FilterByName",
+													"value": "<string>"
+												},
+												{
+													"key": "FilterByIPv4Address",
+													"value": "<string>"
+												},
+												{
+													"key": "PageNumber",
+													"value": "<integer>"
+												},
+												{
+													"key": "PageSize",
+													"value": "<integer>"
+												},
+												{
+													"key": "SortBy",
+													"value": "<string>"
+												},
+												{
+													"key": "OrderBy",
+													"value": "<string>"
+												},
+												{
+													"key": "Skip",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer <token>",
+														"description": "Added as a part of security scheme: bearer"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/Gateway/GetPage?FilterBySerialNumber=<string>&FilterByName=<string>&FilterByIPv4Address=<string>&PageNumber=<integer>&PageSize=<integer>&SortBy=<string>&OrderBy=<string>&Skip=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Gateway",
+														"GetPage"
+													],
+													"query": [
+														{
+															"key": "FilterBySerialNumber",
+															"value": "<string>"
+														},
+														{
+															"key": "FilterByName",
+															"value": "<string>"
+														},
+														{
+															"key": "FilterByIPv4Address",
+															"value": "<string>"
+														},
+														{
+															"key": "PageNumber",
+															"value": "<integer>"
+														},
+														{
+															"key": "PageSize",
+															"value": "<integer>"
+														},
+														{
+															"key": "SortBy",
+															"value": "<string>"
+														},
+														{
+															"key": "OrderBy",
+															"value": "<string>"
+														},
+														{
+															"key": "Skip",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Gateway",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Gateway",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Gateway"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer <token>",
+												"description": "Added as a part of security scheme: bearer"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/Gateway",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Gateway"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Gateway",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"serialNumber\": \"SN011\",\n  \"name\": \"Test4\",\n  \"iPv4Address\": \"192.168.5.8\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Gateway",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Gateway"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer <token>",
+												"description": "Added as a part of security scheme: bearer"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"serialNumber\": \"<string>\",\n  \"name\": \"<string>\",\n  \"iPv4Address\": \"<string>\",\n  \"dateCreated\": \"<dateTime>\",\n  \"dateUpdated\": \"<dateTime>\",\n  \"peripheralDevices\": [\n    {\n      \"id\": \"<integer>\",\n      \"uid\": \"<integer>\",\n      \"vendor\": \"<string>\",\n      \"status\": 1,\n      \"dateCreated\": \"<dateTime>\",\n      \"dateUpdated\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<integer>\",\n      \"uid\": \"<integer>\",\n      \"vendor\": \"<string>\",\n      \"status\": 0,\n      \"dateCreated\": \"<dateTime>\",\n      \"dateUpdated\": \"<dateTime>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Gateway",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Gateway"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Gateway",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": 6,\n    \"serialNumber\": \"SN011\",\n    \"name\": \"Test4\",\n    \"iPv4Address\": \"192.168.5.8\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Gateway",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Gateway"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer <token>",
+												"description": "Added as a part of security scheme: bearer"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"serialNumber\": \"<string>\",\n  \"name\": \"<string>\",\n  \"iPv4Address\": \"<string>\",\n  \"dateCreated\": \"<dateTime>\",\n  \"dateUpdated\": \"<dateTime>\",\n  \"peripheralDevices\": [\n    {\n      \"id\": \"<integer>\",\n      \"uid\": \"<integer>\",\n      \"vendor\": \"<string>\",\n      \"status\": 1,\n      \"dateCreated\": \"<dateTime>\",\n      \"dateUpdated\": \"<dateTime>\"\n    },\n    {\n      \"id\": \"<integer>\",\n      \"uid\": \"<integer>\",\n      \"vendor\": \"<string>\",\n      \"status\": 0,\n      \"dateCreated\": \"<dateTime>\",\n      \"dateUpdated\": \"<dateTime>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Gateway",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Gateway"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "PeripheralDevice",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/PeripheralDevice/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/PeripheralDevice/27",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PeripheralDevice",
+												"27"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer <token>",
+														"description": "Added as a part of security scheme: bearer"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/PeripheralDevice/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"PeripheralDevice",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/PeripheralDevice/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/PeripheralDevice/27",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PeripheralDevice",
+												"27"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer <token>",
+														"description": "Added as a part of security scheme: bearer"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/PeripheralDevice/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"PeripheralDevice",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "GetPage",
+							"item": [
+								{
+									"name": "/api/PeripheralDevice/GetPage",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/PeripheralDevice/GetPage?FilterByUID=<integer>&FilterByVendor=<string>&FilterByStatus=1&PageNumber=<integer>&PageSize=<integer>&SortBy=<string>&OrderBy=<string>&Skip=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PeripheralDevice",
+												"GetPage"
+											],
+											"query": [
+												{
+													"key": "FilterByUID",
+													"value": "<integer>"
+												},
+												{
+													"key": "FilterByVendor",
+													"value": "<string>"
+												},
+												{
+													"key": "FilterByStatus",
+													"value": "1"
+												},
+												{
+													"key": "PageNumber",
+													"value": "<integer>"
+												},
+												{
+													"key": "PageSize",
+													"value": "<integer>"
+												},
+												{
+													"key": "SortBy",
+													"value": "<string>"
+												},
+												{
+													"key": "OrderBy",
+													"value": "<string>"
+												},
+												{
+													"key": "Skip",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Authorization",
+														"value": "Bearer <token>",
+														"description": "Added as a part of security scheme: bearer"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/PeripheralDevice/GetPage?FilterByUID=<integer>&FilterByVendor=<string>&FilterByStatus=1&PageNumber=<integer>&PageSize=<integer>&SortBy=<string>&OrderBy=<string>&Skip=<integer>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"PeripheralDevice",
+														"GetPage"
+													],
+													"query": [
+														{
+															"key": "FilterByUID",
+															"value": "<integer>"
+														},
+														{
+															"key": "FilterByVendor",
+															"value": "<string>"
+														},
+														{
+															"key": "FilterByStatus",
+															"value": "1"
+														},
+														{
+															"key": "PageNumber",
+															"value": "<integer>"
+														},
+														{
+															"key": "PageSize",
+															"value": "<integer>"
+														},
+														{
+															"key": "SortBy",
+															"value": "<string>"
+														},
+														{
+															"key": "OrderBy",
+															"value": "<string>"
+														},
+														{
+															"key": "Skip",
+															"value": "<integer>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/PeripheralDevice",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/PeripheralDevice",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"PeripheralDevice"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Authorization",
+												"value": "Bearer <token>",
+												"description": "Added as a part of security scheme: bearer"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/PeripheralDevice",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PeripheralDevice"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/PeripheralDevice",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"vendor\": \"NovaKun\",\n  \"UID\": \"112\",\n  \"GatewayId\": 3\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/PeripheralDevice",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"PeripheralDevice"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer <token>",
+												"description": "Added as a part of security scheme: bearer"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"uid\": \"<integer>\",\n  \"vendor\": \"<string>\",\n  \"status\": 1,\n  \"dateCreated\": \"<dateTime>\",\n  \"dateUpdated\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/PeripheralDevice",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PeripheralDevice"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/PeripheralDevice",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": " {\n    \"id\": 28,\n    \"uid\": 112,\n    \"Vendor\": \"NovaKun5\",\n    \"gatewayId\": 6,\n    \"status\": \"online\"           \n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/PeripheralDevice",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"PeripheralDevice"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Authorization",
+												"value": "Bearer <token>",
+												"description": "Added as a part of security scheme: bearer"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<integer>\",\n  \"uid\": \"<integer>\",\n  \"vendor\": \"<string>\",\n  \"status\": 1,\n  \"dateCreated\": \"<dateTime>\",\n  \"dateUpdated\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/PeripheralDevice",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"PeripheralDevice"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:7180"
+		}
+	]
+}
